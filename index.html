@@ -48,95 +48,88 @@
       <aside class="audit-summary">
         <p class="eyebrow">Inbox Leak Audit</p>
         <h1>Find the customer replies going stale in Gmail.</h1>
-        <p>LoopLens watches inbound customer and sales threads in Gmail or Google Workspace, then alerts your team when a real human needs to reply.</p>
+        <p>LoopLens watches inbound customer and sales threads in Gmail or Google Workspace, and flags threads where a customer has waited past your reply threshold. On a paid plan, LoopLens texts the owner so a person can reply.</p>
         <div class="stamp">Read-only Gmail scan</div>
         <div class="actions hero-actions">
           <a class="button primary hero-primary" data-app-path="/signup?plan=free_audit" href="https://app.getlooplens.com/signup?plan=free_audit">Start free audit</a>
           <a class="button hero-secondary" href="trust.html">Read-only boundary</a>
         </div>
-        <div class="metric"><strong>$18.4k</strong><span>sample open quote risk</span></div>
+        <div class="metric"><strong>48h</strong><span>default reply threshold, adjustable in whole hours</span></div>
         <div class="metric"><strong>0</strong><span>emails sent, drafted, labeled, or archived</span></div>
       </aside>
 
       <section class="audit-sheet sample-report" aria-label="Sample inbox leak audit report">
         <div class="report-artifact-top">
-          <span>Sample report</span>
-          <span>LoopLens inbox leak audit / example only</span>
+          <span>Sample dashboard</span>
+          <span>Illustrative layout, not real data</span>
         </div>
         <div class="sample-watermark">Sample</div>
         <div class="sheet-banner">
           <div>
-            <p class="kicker">Current sample report</p>
-            <h2>Threads waiting for a human reply</h2>
+            <p class="kicker">Sample dashboard</p>
+            <h2>Leads needing attention</h2>
           </div>
-          <div class="grade-chip">B-</div>
         </div>
-        <div class="sheet-head"><div>Thread evidence</div><div>Wait</div><div>Owner</div><div>Risk</div></div>
+        <div class="sheet-head"><div>Gmail thread</div><div>Flagged</div><div>Inbox</div><div>Next step</div></div>
         <div class="thread-row">
-          <div><div class="subject">Commercial cleaning bid</div><div class="why">Customer asked for revised price after quote. No reply since 10:18.</div></div>
-          <div class="age" data-label="Wait">3h 42m</div><div class="owner" data-label="Owner">Mara</div><div class="risk" data-label="Risk">Revenue leak</div>
-        </div>
-        <div class="thread-row">
-          <div><div class="subject">Roof repair estimate</div><div class="why">Second inbound message, thread still open, owner inactive.</div></div>
-          <div class="age" data-label="Wait">2h 11m</div><div class="owner" data-label="Owner">Chris</div><div class="risk" data-label="Risk">Hot lead</div>
+          <div><div class="subject">Thread 18f3a2c9e4b1d077</div><div class="why">Customer inquiry. No reply from the business past the 48-hour rule.</div></div>
+          <div class="age" data-label="Flagged">4 days ago</div><div class="owner" data-label="Inbox">sales@</div><div class="risk" data-label="Next step">Review and reply</div>
         </div>
         <div class="thread-row">
-          <div><div class="subject">Med spa consult</div><div class="why">Handled by front desk inside threshold. No owner alarm.</div></div>
-          <div class="age ok" data-label="Wait">18m</div><div class="owner" data-label="Owner">Team</div><div class="risk ok" data-label="Risk">Clear</div>
+          <div><div class="subject">Thread 18f39b07c25e6a14</div><div class="why">Customer inquiry. No reply from the business past the 48-hour rule.</div></div>
+          <div class="age" data-label="Flagged">2 days ago</div><div class="owner" data-label="Inbox">office@</div><div class="risk" data-label="Next step">Review and reply</div>
         </div>
         <div class="thread-row">
-          <div><div class="subject">Kitchen remodel question</div><div class="why">Inbound after estimate, unanswered through lunch window.</div></div>
-          <div class="age" data-label="Wait">94m</div><div class="owner" data-label="Owner">Unassigned</div><div class="risk" data-label="Risk">Needs owner</div>
+          <div><div class="subject">Thread 18f4c1d38a0f92b5</div><div class="why">Customer inquiry. No reply from the business past the 48-hour rule.</div></div>
+          <div class="age" data-label="Flagged">Today</div><div class="owner" data-label="Inbox">sales@</div><div class="risk" data-label="Next step">Review and reply</div>
         </div>
-        <p class="sample-report-note">Example report. A real audit grades the live inbox and shows the exact thread evidence behind the score.</p>
+        <p class="sample-report-note">Illustrative example. A real dashboard lists the threads LoopLens flagged, oldest first, each linked to its evidence page and to the thread in Gmail.</p>
       </section>
 
       <aside class="audit-scope">
         <p class="kicker">Read-only watch</p>
-        <p>LoopLens checks Gmail or Google Workspace for inbound customer threads that have waited too long, then shows the evidence before revenue quietly leaks.</p>
-        <div class="rule"><b>Reads</b><span>Gmail threads, elapsed wait, owner state, and evidence for why an alert fired.</span></div>
+        <p>LoopLens checks Gmail or Google Workspace for customer inquiries that have waited too long for a reply, then shows the evidence.</p>
+        <div class="rule"><b>Reads</b><span>Message headers and Gmail's short previews: who wrote last, when, and whether the business replied.</span></div>
         <div class="rule"><b>Never does</b><span>No sending, no drafting, no labels, no archive, no booking, no CRM migration.</span></div>
-        <div class="proof-note"><strong>A+ is still useful</strong><span>If nothing is rotting today, the audit proves the inbox is clean and shows what LoopLens would watch tomorrow.</span></div>
+        <div class="proof-note"><strong>A clean result is an answer too</strong><span>If nothing is past your threshold, the dashboard says no leads need attention right now.</span></div>
       </aside>
     </section>
 
     <section class="section">
       <div class="section-head">
         <h2>See where replies are waiting.</h2>
-        <p>Start with a read-only audit of the inbox. You get a grade, the waiting threads behind it, and the safety boundary before LoopLens ever watches continuously.</p>
+        <p>Start with a free read-only audit of the last 30 days. You see the threads that waited too long and the evidence for each before you decide on daily scans.</p>
       </div>
       <div class="grid-3">
         <div class="panel"><h3>1. Inspect read-only Gmail</h3><p>LoopLens gets enough visibility to inspect inbound threads, not permission to speak for you or reorganize your mailbox.</p></div>
-        <div class="panel"><h3>2. Find stale inbound replies</h3><p>It looks for customer or sales conversations where the latest meaningful message came from the customer and nobody has answered.</p></div>
-        <div class="panel"><h3>3. Report with evidence</h3><p>Your team sees why the thread matters, how long it waited, and who should look at it in Gmail.</p></div>
+        <div class="panel"><h3>2. Find stale inbound replies</h3><p>AI picks out real customer inquiries. A fixed rule then flags any where the business has not replied within your threshold, 48 hours by default.</p></div>
+        <div class="panel"><h3>3. Show the evidence</h3><p>Each flagged thread gets an evidence page with why it was flagged and a link to open it in Gmail.</p></div>
       </div>
     </section>
 
     <section class="section" id="audit-report">
       <div class="section-head">
-        <h2>The audit returns a report, not a guess.</h2>
-        <p>The one-time audit should feel useful even when the inbox is clean. A clean result is an A+ report for today, plus a clear case for why continuous watching matters tomorrow.</p>
+        <h2>The audit returns a list, not a guess.</h2>
+        <p>Free Audit runs one scan. The result is either a list of flagged threads with evidence, or a plain statement that none need attention right now.</p>
       </div>
       <div class="split">
         <article class="report-card">
           <div class="score-top">
-            <div><div class="label">Sample audit result</div><h3>Current inbox grade</h3></div>
-            <div class="grade">A+</div>
+            <div><div class="label">Example result</div><h3>Nothing waiting</h3></div>
           </div>
           <div class="report-list">
-            <div class="report-row"><strong>No active rot</strong><span>No inbound customer thread is currently past the waiting threshold.</span></div>
-            <div class="report-row"><strong>Watch list</strong><span>4 threads are young but worth watching if the customer remains unanswered.</span></div>
-            <div class="report-row"><strong>Recommendation</strong><span>Keep LoopLens watching so tomorrow's missed reply does not depend on someone remembering to check.</span></div>
+            <div class="report-row"><strong>No leads flagged</strong><span>The dashboard says no leads need attention right now.</span></div>
+            <div class="report-row"><strong>What was checked</strong><span>Mail from the last 30 days that is at least 2 days old.</span></div>
+            <div class="report-row"><strong>Next</strong><span>A paid plan scans again every day and texts the owner when a lead is flagged.</span></div>
           </div>
         </article>
         <article class="report-card">
           <div class="score-top">
-            <div><div class="label">Alternate audit result</div><h3>Rot found</h3></div>
-            <div class="grade grade-risk">B-</div>
+            <div><div class="label">Example result</div><h3>Leads flagged</h3></div>
           </div>
           <div class="report-list">
-            <div class="report-row"><strong>3 stale threads</strong><span>Inbound quote, intake, and handoff replies are waiting without a human response.</span></div>
-            <div class="report-row"><strong>Oldest wait</strong><span>71 hours since the latest customer message.</span></div>
+            <div class="report-row"><strong>3 flagged threads</strong><span>Customer inquiries with no reply from the business past the 48-hour rule.</span></div>
+            <div class="report-row"><strong>Evidence</strong><span>Each one has an evidence page with the reason it was flagged and a link to the thread in Gmail.</span></div>
             <div class="report-row"><strong>Next action</strong><span>Review the evidence and reply from Gmail. LoopLens does not contact the customer.</span></div>
           </div>
         </article>
@@ -146,7 +139,7 @@
     <section class="section">
       <div class="section-head">
         <h2>Three places this shows up.</h2>
-        <p>The examples stay small on purpose. LoopLens is not a scenario gallery; it is a proof-led alarm for the inbox patterns owner-led teams already know.</p>
+        <p>These are common patterns, not customer results. Each is a customer inquiry that waited too long for a reply.</p>
       </div>
       <div class="grid-3">
         <a class="example-card" href="examples.html#home-services"><h3>Home-services estimate</h3><p>A homeowner replies with availability after the first quote request and the thread waits too long.</p></a>
@@ -177,28 +170,28 @@
           <p class="label">Free Audit</p>
           <h3>$0</h3>
           <p><strong>1 inbox</strong> per business</p>
-          <p>A one-time inbox audit. Ongoing monitoring and alerts require a paid plan.</p>
+          <p>One read-only scan of the last 30 days. Daily scans and alerts require a paid plan.</p>
           <div class="actions"><a class="button" data-app-path="/signup?plan=free_audit" href="https://app.getlooplens.com/signup?plan=free_audit">Choose Free Audit</a></div>
         </article>
         <article class="panel" data-plan="starter">
           <p class="label">Starter</p>
           <h3>$49/month</h3>
           <p><strong>2 inboxes</strong> per business</p>
-          <p>Ongoing lead detection, stalled-conversation monitoring, evidence and owner alerts.</p>
+          <p>A daily read-only scan of each connected inbox, an evidence page for every flagged lead, and a text alert to the owner during business hours.</p>
           <div class="actions"><a class="button" data-app-path="/signup?plan=starter" href="https://app.getlooplens.com/signup?plan=starter">Choose Starter</a></div>
         </article>
         <article class="panel" data-plan="pro">
           <p class="label">Pro</p>
           <h3>$99/month</h3>
           <p><strong>5 inboxes</strong> per business</p>
-          <p>Ongoing lead detection, stalled-conversation monitoring, evidence and owner alerts.</p>
+          <p>A daily read-only scan of each connected inbox, an evidence page for every flagged lead, and a text alert to the owner during business hours.</p>
           <div class="actions"><a class="button" data-app-path="/signup?plan=pro" href="https://app.getlooplens.com/signup?plan=pro">Choose Pro</a></div>
         </article>
         <article class="panel" data-plan="business">
           <p class="label">Business</p>
           <h3>$199/month</h3>
           <p><strong>15 inboxes</strong> per business</p>
-          <p>Ongoing lead detection, stalled-conversation monitoring, evidence and owner alerts.</p>
+          <p>A daily read-only scan of each connected inbox, an evidence page for every flagged lead, and a text alert to the owner during business hours.</p>
           <div class="actions"><a class="button" data-app-path="/signup?plan=business" href="https://app.getlooplens.com/signup?plan=business">Choose Business</a></div>
         </article>
       </div>
