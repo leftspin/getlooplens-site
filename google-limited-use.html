@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" /><meta name="color-scheme" content="light dark" /><title>Google user data disclosure | LoopLens</title><meta name="description" content="How LoopLens accesses, uses, stores and shares data from Google APIs, and its compliance with the Google API Services User Data Policy, including Limited Use." /><link rel="stylesheet" href="styles.css" /></head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="index.html"><span class="mark" aria-hidden="true"></span><span>LoopLens</span></a>
+    <nav class="nav desktop-nav" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="https://getlooplens.com/audit.html">Inbox audit</a>
+        <a href="https://getlooplens.com/how-it-works.html">How it works</a>
+        <a href="https://getlooplens.com/examples.html">Examples</a>
+        <a href="https://getlooplens.com/trust.html">Trust</a>
+        <a href="https://getlooplens.com/faq.html">FAQ</a>
+        <a href="https://getlooplens.com/pricing.html">Pricing</a>
+        <a class="nav-login" data-app-path="/login" href="https://app.getlooplens.com/login">Log in</a>
+        <a class="primary" data-app-path="/signup?plan=free_audit" href="https://app.getlooplens.com/signup?plan=free_audit">Start free audit</a>
+    </nav>
+    <details class="mobile-menu">
+      <summary>Menu</summary>
+      <div class="mobile-menu-panel">
+        <nav class="nav" aria-label="Mobile">
+        <a href="index.html">Home</a>
+        <a href="https://getlooplens.com/audit.html">Inbox audit</a>
+        <a href="https://getlooplens.com/how-it-works.html">How it works</a>
+        <a href="https://getlooplens.com/examples.html">Examples</a>
+        <a href="https://getlooplens.com/trust.html">Trust</a>
+        <a href="https://getlooplens.com/faq.html">FAQ</a>
+        <a href="https://getlooplens.com/pricing.html">Pricing</a>
+        <a class="nav-login" data-app-path="/login" href="https://app.getlooplens.com/login">Log in</a>
+        <a class="primary" data-app-path="/signup?plan=free_audit" href="https://app.getlooplens.com/signup?plan=free_audit">Start free audit</a>
+        </nav>
+      </div>
+    </details>
+  </div>
+</header>
+    <main id="main" class="site-main">
+    <section class="page-hero"><p class="eyebrow">Legal</p><h1>Google user data disclosure</h1><p class="lede">LoopLens connects to Gmail and Google Workspace inboxes with read-only access. This page explains exactly what LoopLens does with data it receives from Google.</p></section>
+    <section class="legal">
+
+      <h2>Limited Use</h2>
+      <p>LoopLens's use and transfer to any other app of information received from Google APIs will adhere to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
+
+      <h2>What LoopLens asks Google for</h2>
+      <ul>
+        <li><strong>Read-only Gmail access</strong> (gmail.readonly), to read recent messages in the inbox you connect and find customer conversations waiting on a reply.</li>
+        <li><strong>Your Google account email address and sign-in identity</strong> (email, openid), to confirm which inbox you connected.</li>
+      </ul>
+      <p>LoopLens does not ask for permission to send, delete, label, archive or move email, and it never does any of those things.</p>
+
+      <h2>What LoopLens reads</h2>
+      <p>The Free Audit attempts a scan of one inbox until its first successful result; a failed attempt can be retried. The Free Audit does not provide recurring free monitoring. Paid plans scan daily. On each scan, LoopLens reads messages from roughly the last 30 days in each connected inbox. For each message it reads the date, sender, recipients, subject, message identifiers and the Gmail message snippet, a short excerpt of the message text. It does not download full message bodies or attachments.</p>
+
+      <h2>What LoopLens stores</h2>
+      <ul>
+        <li>The connected inbox's email address.</li>
+        <li>Gmail thread and message identifiers, so you can open a flagged conversation in Gmail.</li>
+        <li>Codes recording why a conversation was or was not flagged.</li>
+        <li>The email domains of people in each conversation and one-way fingerprints of subject lines and message snippets.</li>
+        <li>A short coded summary of each conversation's state, used to notice when it changes.</li>
+        <li>The token Google issues when you connect the inbox, used only to read that inbox.</li>
+      </ul>
+      <p>LoopLens does not store message snippets, readable subject lines, message bodies or attachments.</p>
+
+      <h2>How LoopLens uses Google data</h2>
+      <p>LoopLens uses Google data only to provide its user-facing feature: finding inbound customer and sales conversations that have waited too long for a reply, and showing the account owner the evidence in reports and alerts. Alerts go only to the account owner; LoopLens never contacts the people who emailed you.</p>
+      <p>LoopLens does not use Google data for advertising, does not sell it, and does not itself use it to train or improve AI or machine learning models.</p>
+
+      <h2>Who receives Google data</h2>
+      <ul>
+        <li><strong>TypeSafe</strong>, our AI model provider. LoopLens is built to send TypeSafe Gmail message snippets, which side of the conversation sent each message, the connected inbox's address, internal account and inbox identifiers, and your business name and type, only so TypeSafe can decide whether a conversation needs a reply. <strong>No customer Gmail data is sent to TypeSafe at this time.</strong> TypeSafe's public terms say it does not use the data we send it to train AI models without our consent, that it keeps data as long as reasonably necessary for its service and business purposes, and that it may derive usage telemetry, including classifications, to improve its products. Details are in the <a href="privacy.html#automated-detection">privacy policy</a>.</li>
+        <li><strong>DigitalOcean</strong>, which hosts the LoopLens app and database where the stored data above is kept.</li>
+      </ul>
+      <p>We transfer Google data to others only to provide or improve LoopLens's user-facing features, for security, or to comply with the law. In a merger, acquisition or sale of the business, we transfer Google data only after obtaining your explicit prior consent, and it stays under the same protections. We do not transfer it for any other purpose.</p>
+
+      <h2>Human access</h2>
+      <p>No person at LoopLens reads your email. A small number of staff can view reports, which contain the codes and Gmail links described above, to operate and secure the service. Staff will look at more only with your permission, for security reasons, or where the law requires it.</p>
+
+      <h2>Removing access and deleting data</h2>
+      <p>At closure, LoopLens tries to revoke its Google access for every inbox still connected. You can also remove LoopLens at any time in your Google Account under Security, Third-party apps and services. Removing an inbox in the app revokes LoopLens's Google access for that inbox and deletes its stored token. If LoopLens can't confirm the revocation, the inbox stays connected and the app shows an error. Data is deleted as described in our <a href="privacy.html#retention">retention section of our privacy policy</a>.</p>
+    </section>
+  </main>
+
+  <footer class="footer"><div class="footer-inner"><p>LoopLens watches inbox rot without sending, drafting, labeling, archiving, booking, or replacing Gmail.</p><nav class="footer-nav" aria-label="Legal"><a href="https://getlooplens.com/pricing.html">Pricing</a><a href="privacy.html">Privacy policy</a><a href="terms.html">Terms of service</a><a href="google-limited-use.html">Google Limited Use</a><a href="privacy.html#retention">Data retention</a></nav></div></footer>
+</body>
+</html>
