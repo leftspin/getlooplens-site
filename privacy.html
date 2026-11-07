@@ -42,7 +42,7 @@
       <h2>The short version</h2>
       <ul>
         <li>LoopLens has read-only access to the Gmail inboxes you connect. It cannot send, delete, label, archive or move email.</li>
-        <li>LoopLens reads message headers and Gmail's message snippets, the short excerpts of message text that Gmail provides. It never downloads full message bodies and does not store the snippets. No customer Gmail data is sent to TypeSafe at this time. See <a href="#automated-detection">Automated detection and TypeSafe</a>.</li>
+        <li>LoopLens reads message headers and Gmail's message snippets, the short excerpts of message text that Gmail provides. It never downloads full message bodies and does not store the snippets. See <a href="#automated-detection">Automated detection and TypeSafe</a>.</li>
         <li>Alerts go only to the account owner, by email to the owner's sign-in address. LoopLens never contacts your customers or leads.</li>
         <li>We do not sell your information or use it for advertising.</li>
         <li>When you close your account, we try to revoke Google access for the inboxes still connected and delete your account data from the LoopLens app 30 days later, with the exceptions described below.</li>
@@ -69,7 +69,6 @@
 
       <h2 id="automated-detection">Automated detection and TypeSafe</h2>
       <p>LoopLens is built to use an AI model from TypeSafe to decide whether a conversation is a customer or sales conversation that needs a reply. When it is used, LoopLens sends TypeSafe the Gmail message snippets, which side of the conversation sent each message, the connected inbox's email address, internal account and inbox identifiers, and your business name and type, and does not keep the snippets after the scan.</p>
-      <p><strong>No customer Gmail data is sent to TypeSafe at this time.</strong></p>
       <p>TypeSafe's public terms say:</p>
       <ul>
         <li>TypeSafe does not use the data we send it to train AI models without our consent.</li>
@@ -82,7 +81,7 @@
       <p>We do not sell personal information. We share information only with service providers that help us run LoopLens, and only what they need:</p>
       <ul>
         <li><strong>Google</strong>, to read the inboxes you connect and to revoke access when you close your account.</li>
-        <li><strong>TypeSafe</strong>, the AI model provider described under <a href="#automated-detection">Automated detection and TypeSafe</a>. No customer Gmail data is sent to TypeSafe at this time.</li>
+        <li><strong>TypeSafe</strong>, the AI model provider described under <a href="#automated-detection">Automated detection and TypeSafe</a>.</li>
         <li><strong>Clerk</strong>, for sign-in, account security and confirming your email address and phone number.</li>
         <li><strong>Stripe</strong>, for subscriptions and payments.</li>
         <li><strong>Resend</strong>, to deliver alert emails to the account owner's sign-in address.</li>
